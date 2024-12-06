@@ -1268,7 +1268,7 @@ def _main(args):
     logger.info(f'Running tests on commit range {COMMIT_RANGE}')
 
     if args.list:
-        for testcase in inheritors(ComplianceTest):
+        for testcase in inheritors(ComplianceTest): 
             print(testcase.name)
         return 0
 
